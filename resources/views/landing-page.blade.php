@@ -6,6 +6,9 @@
         </div>
         <div class="name-wrap">
             <img src="Kareumbi Farm.svg">
+            <h1>
+                HAI
+            </h1>
         </div>
         <div class="eclipse-wrap" id="eclipse-out">
             <button class="eclipse1" type="submit" onclick="window.location.href='/login-page'">></button>
