@@ -17,6 +17,28 @@
             <i class="fas fa-search fa-lg"></i>
         </div>
     </div>
+    <div class="card-content">
+        <div class="box-card">
+            <div class="card-member">
+                <div class="img-card">
+                
+                </div>
+                <div class="name-member">
+                    Naufal Fadllur
+                </div>
+            </div>
+            <div class="bottom-card-member">
+                <div class="bottom-card">
+                    <div class="major-member">
+                        Teknik Informatika- 
+                    </div>
+                    <div class="lecture-member">
+                        Widyatama
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <script>
     
