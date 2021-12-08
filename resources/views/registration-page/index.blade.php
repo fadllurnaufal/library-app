@@ -22,7 +22,6 @@
                     <select name="logas" id="logas" class="form-control"> 
                         <option value="Dosen">Dosen</option>
                         <option value="Mahasiswa">Mahasiswa</option>
-                        <option value="Umum">Umum</option>
                     </select>
                 </div>
                 <div class="btn-registration">

@@ -1,7 +1,7 @@
 @extends('dashboard-page.layouts.main')
 @section('container')
 <div class="member-main">
-    <div class="member-content">
+    <div class="top-content">
         <div class="header">
             <h2>Library's Member</h2>
         </div>
@@ -19,7 +19,7 @@
     </div>
     <div class="card-content">
         <div class="box-card">
-            <div class="card-member">
+            <div class="top-card-member">
                 <div class="img-card">
                 
                 </div>
@@ -35,6 +35,13 @@
                     <div class="lecture-member">
                         Widyatama
                     </div>
+                </div>
+            </div>
+            <div class="option-card-member">
+                <div class="delete">
+                    <button type="submit" >
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
                 </div>
             </div>
         </div>

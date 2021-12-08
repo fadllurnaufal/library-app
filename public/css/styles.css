@@ -42,15 +42,15 @@ body{
 }
 
 .logo-wrap img{
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     text-align: center;
 }
 
 
 .eclipse-wrap{
     padding-left: auto !important;
-    padding-top: 100px !important;
+    padding-top: 50px !important;
     text-align: center;
 }
 
@@ -87,10 +87,11 @@ body{
 
 .login-page{
     width: 1440px !important;
-    height: 100vh !important;
+    height: 100% !important;
     background-color: #1A1C21;
     padding-top: 100px !important;
     text-align: center;
+    padding-bottom: 100px;
 }
 
 .box-login{
@@ -158,6 +159,7 @@ body{
     font-size: 25px !important;
     font-weight: bold;
     margin-top: 50px !important;
+    transition: all 0.4s ease;
     
 }
 
@@ -254,6 +256,7 @@ body{
     font-size: 25px !important;
     font-weight: bold;
     margin-top: 50px !important;
+    transition: all 0.4s ease;
 }
 
 .registration:hover{
@@ -439,13 +442,13 @@ body{
     margin-left: 250px;
 }
 
-.member-content{
+.top-content{
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
 }
 
-.member-content .header h2{
+.top-content .header h2{
     display: flex;
     font-size: 40px !important;
     margin-left: 450px;
@@ -453,11 +456,11 @@ body{
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.30);
 }
 
-.member-content .btn-add{
+.top-content .btn-add{
     display: flex;
     flex: right;
     padding-top: 12.5px;
-    padding-right: 20px;
+    padding-right: 75px;
 }
 
 .member-main .search-bar{
@@ -487,7 +490,7 @@ body{
 .search-bar .search-icon{
     position: absolute;
     top: 147.5px;
-    right: 90px;
+    right: 100px;
     transform: translateY(-50%);
     color: #8A8D93;
     cursor: pointer;
@@ -498,6 +501,7 @@ body{
     display: flex;
 }
 .card-content .box-card{
+    display: flex;
     width: 1070px;
     height: 100px;
     border-style: solid;
@@ -508,35 +512,124 @@ body{
     border-radius: 10px;
 }
 
-.img-card{
+.card-content .box-card .top-card-member{
     display: flex;
-    position: ;
+}
+
+.card-content .box-card .top-card-member .img-card{
+    display: flex;
     width: 58px;
     height: 58px;
     border-radius: 10px;
     background: #c4c4c4;
+    margin: 21px;
 }
 
-.card-member{
+.card-content .box-card .top-card-member .name-member{
     display: flex;
-    margin-top: 20px;
-    margin-left: 25px;
-}
-
-.card-member .name-member{
+    position: absolute;
     font-size: 25px;
     font-weight: 400;
     color: #1A1C21;
-    margin-left: 25px;
+    margin-left: 100px;
+    margin-top: 23px;
+}
 
+.card-content .box-card .option-card-member{
+    display: flex;
+}
+
+.box-card .option-card-member .delete button{
+    position: absolute;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background: #DF2E2E;
+    padding: 10px ;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 30px;
+    right: 90px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.box-card .option-card-member .delete button:hover{
+    position: absolute;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background: #950101;
+    padding: 10px ;
+    border-radius: 5px;
+    color: #e5e5e5;
+    margin-top: 30px;
+    cursor: pointer;
 }
 
 .bottom-card{
     display: flex;
     position: absolute;
     top: 87.5%;
-    margin-left: 108px;
 }
+
+/*form add*/
+.form-add-content{
+    width:calc(100% - 250px);
+    height: auto;
+    margin-left: 250px;
+}
+
+.form-add-content .header h2{
+    font-size: 40px;
+    color: #1A1C21;
+    font-weight: 600;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.30);
+}
+
+.name-form{
+    font-size: 25px;
+    margin-left: 75px;
+}
+
+.box-form{
+    text-align: center;
+}
+
+.box-form input{
+    width: 1050px;
+    height: 60px;
+    background: #e5e5e5;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-size: 20px;
+    padding-left: 20px;
+    color:#8A8D93;
+    margin-bottom: 25px;
+}
+
+.btn-add-member{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-add-member .btn{
+    background: #1A1C21;
+    color: #fff;
+    font-size: 25px;
+    transition: all 0.4s ease;
+}
+
+.btn-add-member .btn:hover{
+    background: #333740;
+    color: #01C1D5;
+    font-size: 25px;
+}
+
 
 
 
