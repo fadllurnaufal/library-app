@@ -50,10 +50,12 @@
             </a>
         </li>
         <li>
-            <a href="{{ url('/logout') }}">
-                <i data-feather="log-out"></i>
-                <span class="links-name">Logout</span>
-            </a>
+                <a href="{{ url('/logout') }}">
+                    
+                    <i data-feather="log-out"></i>
+                    <span class="links-name">Logout</span>
+                </a>
+            
         </li>
     </ul>
 </div>

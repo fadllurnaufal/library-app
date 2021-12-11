@@ -22,14 +22,31 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/login-page', [LoginController::class, 'index'])->middleware('guest');
-Route::post('/login-page', [LoginController::class, 'authenticate']);
-Route::post('/logout', [LoginController::class, 'logout']);
 
-Route::get('/registration-page', [RegistrationController::class,'index'])->middleware('guest');
+/**
+ * login route
+ */
+Route::get('/login-page', [LoginController::class, 'index'])->name('login');
+Route::post('/login-page', [LoginController::class, 'authenticate']);
+Route::get('logout', [LoginController::class, 'logout'])->name('logout');
+
+
+/**
+ * registration
+ * function for user admin register
+ */
+Route::get('/registration-page', [RegistrationController::class,'index']);
 Route::post('/registration-page', [RegistrationController::class, 'save']);
 
-Route::get('/dashboard-page', [DashboardController::class, 'index'])->middleware(('auth'));
 
-Route::get('/dashboard-page/member', [MemberController::class, 'index']);
-Route::get('/member/add', [MemberController::class, 'add']);
+Route::middleware(['auth'])->group(function () {
+
+    //  route group dashboard
+    Route::get('/dashboard-page', [DashboardController::class, 'index']);
+
+
+    // route group member
+    Route::get('/dashboard-page/member', [MemberController::class, 'index']);
+    Route::get('/member/add', [MemberController::class, 'add']);
+
+});
