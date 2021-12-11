@@ -87,7 +87,7 @@ body{
 
 .login-page{
     width: 1440px !important;
-    height: 100% !important;
+    height: 100vh !important;
     background-color: #1A1C21;
     padding-top: 100px !important;
     text-align: center;
